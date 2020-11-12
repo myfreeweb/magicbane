@@ -21,7 +21,7 @@ In particular, Magicbane combines the following libraries:
 - [envy](https://www.stackage.org/package/envy) for configuration. [Store config in environment variables](https://12factor.net/config)!
 - [fast-logger](https://www.stackage.org/package/fast-logger) for logging. Integrated into RIO's logging API, and `monad-logger` as well for libraries that use it.
 - [EKG](https://www.stackage.org/package/ekg)+[monad-metrics](https://www.stackage.org/package/monad-metrics) for metrics. `monad-metrics` lets you easily measure things in your application: just use `label`/`counter`/`distribution`/`gauge`/`timed` in your handlers. The EKG ecosystem has backends for [InfluxDB](https://www.stackage.org/package/ekg-influxdb), [Carbon (Graphite)](https://www.stackage.org/package/ekg-carbon), [statsd](https://www.stackage.org/package/ekg-statsd), [Prometheus](https://www.stackage.org/package/ekg-prometheus-adapter) and others… And a simple local [web server](https://www.stackage.org/package/ekg-wai) for development.
-- [refined](https://nikita-volkov.github.io/refined/) for validation. Why use functions for input validation when you can use types? Magicbane integrates `refined` with Aeson, so you can write things like `count ∷ Refined Positive Int` in your data type definitions and inputs that don't satisfy the constraints will be rejected when input is processed.
+- [refined](https://nikita-volkov.github.io/refined/) for validation. Why use functions for input validation when you can use types? (You can write things like `count ∷ Refined Positive Int` in your data type definitions and inputs that don't satisfy the constraints will be rejected when input is processed. Magicbane used to integrate `refined` with Aeson, but now this is included in `refined` directly, so it's really just a reexport.)
 - [http-client](https://www.stackage.org/package/http-client)([-tls](https://www.stackage.org/package/http-client-tls)) for, well, making HTTP requests. Most high level HTTP client libraries are built on top of that. Magicbane provides a small composable interface based on [http-conduit](https://www.stackage.org/package/http-conduit), which lets you e.g. stream the response body directly into [an HTML parser](https://www.stackage.org/package/html-conduit).
 - [http-link-header](https://www.stackage.org/package/http-link-header) for the [HTTP `Link` header](https://tools.ietf.org/html/rfc5988#section-5), unsurprisingly.
 - [unliftio](https://www.stackage.org/package/unliftio) for uhhh [unlifting](https://github.com/fpco/unliftio/tree/master/unliftio#readme).
@@ -34,8 +34,6 @@ Not part of Magicbane, but recommended:
 - [html-conduit](https://www.stackage.org/package/html-conduit) for parsing HTML.
 - [microformats2-parser](https://www.stackage.org/package/microformats2-parser) for parsing microformats2 from that HTML.
 - [pcre-heavy](https://www.stackage.org/package/pcre-heavy) for regular expressions.
-
-Magicbane was extracted from [Sweetroll](https://github.com/myfreeweb/sweetroll).
 
 ## Usage
 
