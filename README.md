@@ -1,7 +1,7 @@
 `An object appears at your feet! The voice of Anhur rings out: "Use my gift wisely!" a - an athame named Magicbane.`
 
 [![Hackage](https://img.shields.io/hackage/v/magicbane.svg?style=flat)](https://hackage.haskell.org/package/magicbane)
-[![Build Status](https://img.shields.io/travis/myfreeweb/magicbane.svg?style=flat)](https://travis-ci.org/myfreeweb/magicbane)
+[![Build Status](https://github.com/myfreeweb/magicbane/workflows/Test/badge.svg)](https://github.com/myfreeweb/magicbane/actions)
 [![unlicense](https://img.shields.io/badge/un-license-green.svg?style=flat)](https://unlicense.org)
 
 # magicbane
