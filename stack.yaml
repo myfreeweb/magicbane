@@ -7,9 +7,9 @@ extra-deps:
   - ekg-wai-0.1.0.3
   - ekg-json-0.1.0.6
   - wai-cli-0.2.0
-  - refined-0.4.2.2
-  - QuickCheck-2.12.6.1
+  - refined-0.6.1
   - servant-server-0.18
   - servant-0.18
+  - these-skinny-0.7.4
 
 pvp-bounds: none
