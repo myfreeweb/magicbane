@@ -1,5 +1,5 @@
 name: magicbane
-version: '0.5.0'
+version: '0.5.1'
 synopsis: >
   A web framework that integrates Servant, RIO, EKG, fast-logger, wai-cli…
 description: >
@@ -9,10 +9,10 @@ description: >
 category: Web
 author: Greg V
 maintainer: greg@unrelenting.technology
-copyright: 2017-2018 Greg V <greg@unrelenting.technology>
+copyright: 2017-2020 Greg V <greg@unrelenting.technology>
 license: PublicDomain
 github: myfreeweb/magicbane
-tested-with: GHC==8.6.5
+tested-with: GHC==8.8.4
 dependencies:
   - base >=4.8.0.0 && <5
   - rio
